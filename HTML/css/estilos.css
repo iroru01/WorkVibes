@@ -44,6 +44,12 @@ h3{
 .span_text{
     margin-right: 50px;
 }
+.text-area{
+    width:400px;
+    height:100px;
+    border: 2px solid gray;
+}
+
 /*IMG*/
 .img_logo {
     max-width: 100%;
@@ -52,6 +58,9 @@ h3{
 }
 .logo_seccion{
     width: 25%;
+}
+.emojis{
+width: 60%;
 }
 /*BOTONES*/
 #btn_entrar {
@@ -71,4 +80,27 @@ h3{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.btn_emojis{
+    border: none;
+    border-radius: 5px;
+}
+
+/* Estilo para las cajas de texto cuando hay un error */
+input.error {
+    border: 1px solid red;
+}
+
+/* Estilo para los mensajes de error */
+
+.error-msg {
+    display: block;
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
 }
