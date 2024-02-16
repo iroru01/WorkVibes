@@ -1,0 +1,74 @@
+/*CUERPO*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-fluid {
+ padding: 60px;
+}
+
+input{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+#padding_container{
+    padding-top: 150px;
+}
+.inicio_Ses_Form{
+    padding-top: 30px;
+}
+
+#section_encargado{
+    margin-top: 50px;
+}
+
+/*CAJAS FORMULARIO*/
+#fecha{
+    padding: 10px;
+}
+/*TEXTOS*/
+h5{
+    color: #007bff;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+h4{
+    color: #007bff
+}
+h3{
+    padding-left: 60px;
+    color: #007bff
+}
+.span_text{
+    margin-right: 50px;
+}
+/*IMG*/
+.img_logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 450px; /* Ajusta la altura máxima según lo necesites */
+}
+.logo_seccion{
+    width: 25%;
+}
+/*BOTONES*/
+#btn_entrar {
+    margin-top: 8px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn_next {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

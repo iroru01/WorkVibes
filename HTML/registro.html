@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	
+	<title>WORK VIBES</title>
+	
+	<link rel="icon" type="image/png" href="imgs/fav_icon_WV.svg">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=lato:300i,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fuentes_awesome/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<br>
+<div class="container">
+    <div class="row">
+                <div class="">
+                    <img src="imgs/fav_icon_WV.svg" alt="logo_mw" class="logo_seccion">
+                </div>
+                <div class="col-12">
+                    <h3>FORMULARIO DE REGISTRO</h3>
+                </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row align-center">
+        <div class="col-12 col-md-5 offset-md-2">
+        <h5>Introduce tus datos personales</h5>
+            <form action="">
+                <input type="text" placeholder="Nombre de usuario" class="form-control col-8" id="nombre_usuario" name="nombre" required>
+                <input type="text" placeholder="Nombre" class="form-control col-8" id="caja_form" name="nombre" required>
+                <input type="text" placeholder="Apellido" class="form-control col-8" id="apellido">
+                <input type="text" placeholder="DNI" class="form-control col-8" id="dni">
+                <input type="text" placeholder="Teléfono" class="form-control col-8" id="telefono">
+                <input type="text" placeholder="Direccion" class="form-control col-8" id="direccion">
+                <input type="password" placeholder="Contraseña" class="form-control col-8" id="caja_form" id="contraseña">
+                <input type="password" placeholder="Confirmar contraseña" class="form-control col-8" id="confirma_contraseña">
+            </form>
+        </div>
+       <div class="row" id="section_encargado">
+            <div class="col-12">
+                <h4>¿Eres encargado o responsable?</h4>
+                <div class="radio-group">
+                    <input type="radio" class="btn_radio"  name="jefe" value="Jefe"><span class="span_text">Encargado</span>
+                    <input type="radio" class=""  name="jefe" value="Empleado"><span class="">Empleado</span>
+                </div>
+                <br>
+                <h4>¿Cuándo te incorporaste a la empresa?</h4>
+                <input type="date" name="fecha" class="form-control col-8 offset-md-2" id="fecha">
+                <a href="registro.html"><button type="button" class="form-control col-8 offset-md-2" id="btn_next" name="button" required>Siguiente</button><br></a>
+            </div>
+       </div>
+</div>
+
+</body>
+</html>
