@@ -272,3 +272,15 @@ input.error {
     color: red;
     font-size: 12px;
 }
+
+/* Estilo para los mensajes de error */
+.error-message {
+    display: block;
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.input-error {
+    border: 1px solid red;
+}
