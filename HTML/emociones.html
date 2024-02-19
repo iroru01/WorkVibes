@@ -19,13 +19,11 @@
 <br>
 <div class="container">
     <h4>¿Qué actividad has realizado?</h4>
-    <div class="row">
-        <div class="col-12 col-md-12">
+    <div class="row justify-content-center">
             <form action="">
-                <input type="text" class="text-area" placeholder="Describe la actividad que has realizado">
+                <input type="text" class="text-area col-12 col-md-12" placeholder="Describe la actividad que has realizado">
             <br>
             </form>
-        </div>
     </div>
     <br>
     <h4>¿Cómo te has sentido?</h4>
@@ -44,10 +42,17 @@
             <button class="btn_emojis"><img src="imgs/emojis/cotnento.png" class="emojis" alt="Contento"><p><br>CONTENTO</p></button>
         </div>
     </div>
+
+    <!-- NUEVO DIV-->
     <div class="row justify-content-center">
-        <a href="emociones.html"><button type="button" class="form-control col-12" id="btn_next" name="button" required>Siguiente</button><br></a>
+        <h4>¿Qué día ?</h4>
     </div>
-<!-- NUEVO DIV-->
+    <div class="row justify-content-center">
+        <input type="date" class="form-control" id="dia_emocion">
+    </div>
+    <div class="row justify-content-center">
+        <a href="emociones.html"><button type="button" class="form-control col-12" id="btn_next" name="button" required>GUARDAR</button><br></a>
+    </div>
 </div>
 </body>
 </html>
