@@ -22,13 +22,16 @@
             <nav id="mainnav" role="navigation">
                 <ul>
                     <li><a href="lista_emociones.html"><i class="fas fa-list-ul"></i><span>Lista de emociones</span></a></li>
-                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i><span>Login</span></a></li>
-                    <li><a href="registro.html"><i class="fas fa-user"></i><span>Regístrate</span></a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-out-alt"></i><span>Cerrar Sesion</span></a></li>
                     <li><a href="Index.html"><i class="fas fa-home"></i><span>Inicio</span></a></li>
                     <li><a href="#"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
     </header>
+    <!-- Barra de usuario -->
+        <div class="barra_usuario">
+            Usuario: Nombre del Usuario <!-- Reemplazar "Nombre del Usuario" con el nombre real del usuario que ha iniciado sesión -->
+        </div>
 <body>
 <br>
 <div class="container-fluid">
@@ -47,17 +50,21 @@
         </div>
         <div class="col-12 col-md-6"><br>
             <div class="row">
-                <div class="col-2"><p>AÑADIR</p></div>
-                <div class="col-2"><p>EDITAR</p></div>
-                <div class="col-2"><p>ELIMINAR</p></div>
-            </div>
-            <div class="row">
-                <div class="col-2"><img src="imgs/icons/aniadir.png" id="img_aniadir" class="btns_emociones" alt=""></div>
-                <div class="col-2"><img src="imgs/icons/edit_btn.png" id="img_editar" class="btns_emociones" alt=""></div>
-                <div class="col-2"><img src="imgs/icons/papelera.png" id="img_eliminar" class="btns_emociones" alt="img_eliminar"></div>
+                <div class="col-12 col-md-3">
+                    <!--ELIMINAR HREF-->
+                    <a href="emociones.html"><button class="boton_anadir mb-3">AÑADIR</button></a>
+                    <img src="imgs/icons/aniadir.png" id="img_aniadir" class="btns_emociones" alt="">
+                </div>
+                <div class="col-12 col-md-3">
+                    <button class="boton_anadir mb-2">EDITAR</button>
+                    <img src="imgs/icons/edit_btn.png" id="img_editar" class="btns_emociones" alt="">
+                </div>
+                <div class="col-12 col-md-3">
+                    <button class="boton_anadir mb-2">ELIMINAR</button>
+                    <img src="imgs/icons/papelera.png" id="img_eliminar" class="btns_emociones" alt="img_eliminar"></div>
             </div>
         </div>
     </div>
-</div>
+</div>  
 </body>
 </html>

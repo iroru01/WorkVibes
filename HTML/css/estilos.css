@@ -179,8 +179,11 @@ h3{
     height: auto;
     max-height: 450px; /* Ajusta la altura máxima según lo necesites */
 }
+.img_registro{
+  width: 50%;
+}
 .img_tickAzul{
-width: 0%;
+width: 40%;
 }
 #img_editar{
     width: 55%;
@@ -201,8 +204,16 @@ width: 0%;
 .emojis{
 width: 60%;
 }
-.btn_emojis{
-    transition: transform 0.3s ease;
+/* Estilos para los emojis */
+.btn_emojis {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.3s ease;
+}
+.btn_emojis.active {
+  border: 2px solid #007bff; /* Cambia el borde cuando está activo */
 }
 .btn_emojis:hover {
     transform: scale(1.3);
@@ -238,6 +249,26 @@ width: 60%;
     border: none;
     border-radius: 5px;
 }
+.boton_anadir {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+/* Estilos para la barra de usuario */
+.barra_usuario {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+}
 
 /*TABLA*/
 th{
@@ -260,7 +291,6 @@ input.error {
 }
 
 /* Estilo para los mensajes de error */
-
 .error-msg {
     display: block;
     color: red;
