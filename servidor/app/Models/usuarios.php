@@ -7,13 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class usuarios extends Model
 {
-    public function departamento()
-    {
-        return $this->belongsTo(Departamento::class, 'id_departamento');
-    }
-
-    public function eventos()
-    {
-        return $this->hasMany(Evento::class, 'id_creador');
-    }
+    use HasFactory;
+    protected $fillable = [
+        'nombre_user',
+        'dni',
+        'contraseña',
+    ];
 }

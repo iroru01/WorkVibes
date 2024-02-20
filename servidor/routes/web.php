@@ -17,18 +17,16 @@ use App\Http\Controllers\LoginController;
 Route::get('/', function () {
     return view('welcome');
 });
-<<<<<<< HEAD
 //VISTAS 
 Route::view("index","index");
 Route::get('/login', 'LoginController@index')->name('login');
-Route::get('/registro', 'LoginController@index')->name('register');
-Route::get('/lista_emociones', 'LoginController@index')->name('lista_emociones');
-=======
-Route::resource('emocionesBueno',emocionesBueno::class); //creo que esta ruta está mal
+Route::get('/registro', 'RegistrarController@index')->name('register');
+Route::get('/lista_emociones', 'LoginController@index')->name('show');
+
+//Route::resource('emocionesBueno',emocionesBueno::class); //creo que esta ruta está mal
 
 
 
->>>>>>> 8da0bdc38454434b501c4fcd6c2ffa4ba5216bf5
 
 /***AUTENTIFICACION*****/ 
 //vistas para la autentificación de Laravel, enganchar las que tenemos de html
