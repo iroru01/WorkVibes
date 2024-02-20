@@ -12,5 +12,11 @@ class usuarios extends Model
         'nombre_user',
         'dni',
         'contraseña',
+        'name',
+        'apeliido',
+        'teléfono',
+        'dirección',
+        'password',
+        'confirmar contraseña'
     ];
 }
