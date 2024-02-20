@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('nombre')->nullable();
             $table->string('telefono');
             $table->string('direccion');
+            $table->string('contraseña');
+            $table->string('confirmar_contraseña');
             //con foreign consigo hacer las relaciones entre la tabla usuarios con la tabla eventos y departamentos
             $table->unsignedBigInteger('id_departamento');
             $table->foreign('id_departamento')->references('id')->on('departamentos')->onDelete('cascade');
