@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (!document.querySelectorAll('.error').length) {
-            window.location.href = "login.html"; 
+            window.location.href = "lista_emociones.html"; 
         }
     });
 });
