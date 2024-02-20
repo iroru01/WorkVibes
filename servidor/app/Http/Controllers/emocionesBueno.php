@@ -9,7 +9,7 @@ class emocionesBueno extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index() //para mostrar la lista de emociones ¿o con show?
     {
         //
     }
@@ -17,8 +17,8 @@ class emocionesBueno extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
+    public function create() //para crear las emociones
+    { 
         //
     }
 
@@ -41,7 +41,7 @@ class emocionesBueno extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(string $id) //para editar el registro de las emociones
     {
         //
     }
@@ -49,7 +49,7 @@ class emocionesBueno extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $id) 
     {
         //
     }
@@ -57,7 +57,7 @@ class emocionesBueno extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(string $id) //para eliminar el registro de la emocion
     {
         //
     }

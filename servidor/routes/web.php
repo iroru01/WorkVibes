@@ -17,6 +17,10 @@ use App\Http\Controllers\LoginController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('emocionesBueno',emocionesBueno::class); //creo que esta ruta está mal
+
+
+
 
 //vistas para la autentificación de Laravel, enganchar las que tenemos de html
 Route::view('/login',"login") -> name('login');
