@@ -17,7 +17,13 @@ use App\Http\Controllers\LoginController;
 Route::get('/', function () {
     return view('welcome');
 });
+//VISTAS 
+Route::view("index","index");
+Route::get('/login', 'LoginController@index')->name('login');
+Route::get('/registro', 'LoginController@index')->name('register');
+Route::get('/lista_emociones', 'LoginController@index')->name('lista_emociones');
 
+/***AUTENTIFICACION*****/ 
 //vistas para la autentificación de Laravel, enganchar las que tenemos de html
 Route::view('/login',"login") -> name('login');
 Route::view('/registro',"register") -> name('registro');
