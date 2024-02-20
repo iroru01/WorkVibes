@@ -16,8 +16,7 @@ return new class extends Migration
             $table->string('nombre_evento');
             $table->integer('tiempo');
             $table->date('fecha');
-            $table->integer('id_departamento');
-            $table->timestamps();
+             $table->timestamps();
 
         });
     }
