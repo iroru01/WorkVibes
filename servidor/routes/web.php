@@ -26,7 +26,7 @@ Route::get('/', function () {
 Route::view("index","index");
 Route::get('/login', 'LoginController@index')->name('login');
 Route::get('/registro', 'RegistrarController@index')->name('register');
-//Route::get('/lista_emociones', 'LoginController@index')->name('show');
+Route::get('/lista_emociones', 'UsuarioController@index')->name('show');
 
 //Route::resource('emocionesBueno',emocionesBueno::class); //creo que esta ruta está mal
 

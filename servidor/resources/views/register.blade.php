@@ -72,7 +72,7 @@
                 </div>
                 <!-- QUITAR HREF -->
                 <div class="row justify-content-center"> <!-- Añadido para centrar el botón -->
-                <a href=""><button type="button" class="form-control" id="btn_next" name="button" required>Siguiente</button></a>
+                <a href="{{route('lista_emociones')}}"><button type="button" class="form-control" id="btn_next" name="button" required>Siguiente</button></a>
                 </div>
             </div>
         </div>

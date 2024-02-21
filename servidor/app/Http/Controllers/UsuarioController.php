@@ -40,7 +40,7 @@ class UsuarioController extends Controller
 
         //después de haber hecho el registro nos redirige a login, pero esto es opcional creo que nosotros no lo tenemos
         //Auth::login($user); //entendemos que está validado y todo correcto y lo redigiremos a su perfil
-        return redirect(route('privada'));
+        return redirect(route('lista_emociones'));
     }
 
     // Método para actualizar un usuario existente
