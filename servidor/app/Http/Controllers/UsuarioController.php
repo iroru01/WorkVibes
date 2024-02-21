@@ -25,7 +25,7 @@ class UsuarioController extends Controller
     }
 
     // Método para crear un nuevo usuario
-    public function register (Request $request){
+    public function register (Request $request){ //store
         //Validar los datos
         //Validar el usuario que tenemos abierto
         $user = new usuarios();
@@ -41,6 +41,13 @@ class UsuarioController extends Controller
         //después de haber hecho el registro nos redirige a login, pero esto es opcional creo que nosotros no lo tenemos
         //Auth::login($user); //entendemos que está validado y todo correcto y lo redigiremos a su perfil
         return redirect(route('lista_emociones'));
+    }
+
+    //create
+
+    public function create (){
+        $user = new usuarios();
+        return view('save');
     }
 
     // Método para actualizar un usuario existente

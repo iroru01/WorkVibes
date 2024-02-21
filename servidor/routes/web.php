@@ -25,18 +25,18 @@ Route::get('/', function () {
 //VISTAS 
 Route::view("index","index");
 Route::get('/login', 'LoginController@index')->name('login');
-Route::get('/registro', 'RegistrarController@index')->name('register');
+Route::get('/registro', 'RegistrarController@index')->name('save');
 Route::get('/lista_emociones', 'UsuarioController@index')->name('show');
 
 //Route::resource('emocionesBueno',emocionesBueno::class); //creo que esta ruta está mal
 
-Route::post('/registrar', [UsuarioController::class, 'register'])->name('guardar_usuario');
 
+Route::get('/registrar', [UsuarioController::class, 'create'])->name('guardar_usuario');
 
 /***AUTENTIFICACION*****/ 
 //vistas para la autentificación de Laravel, enganchar las que tenemos de html
 Route::view('/login',"login") -> name('login');
-Route::view('/registro',"register") -> name('registro');
+Route::view('/registro',"save") -> name('save');
 Route::view('/privada', "secret") -> middleware('auth') -> name('privada');//donde queremos llegar una vez tenemos inciada sesión de forma correcta
 //con el middleware lo que hacemos es buscar una sesion activa del usuario que entrase previamente y comprobamos que las credenciales sean correctas y sigan igual entonces podemos dejarle enetrar
 //controladores con el que sabremos qué quiere hacer el usuario

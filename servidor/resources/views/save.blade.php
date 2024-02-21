@@ -33,8 +33,9 @@
     <div class="row align-center">
         <div class="col-12 col-md-5 offset-md-2">
             <h5>Introduce tus datos personales</h5>
-            <form>
-                <input type="text" placeholder="Nombre de usuario" class="form-control col-8" id="nombre_usuario" name="nombre_usuario" required>
+            <form action="{{route('save')}}" method="POST"> <!-- metodo siempre post y el action siempre url -->
+                @csrf
+                <input type="text" placeholder="Nombre de usuario" class="form-control col-8" id="nombre_usuario" name="nombre_usuario" required> <!-- el name mismo que el del modelo --> 
                 <div class="error-message" id="nombre_usuario-error"></div>
                 <input type="text" placeholder="Nombre" class="form-control col-8" id="nombre" name="nombre" required>
                 <div class="error-message" id="nombre-error"></div>
@@ -50,7 +51,7 @@
                 <div class="error-message" id="contraseña-error"></div>
                 <input type="password" placeholder="Confirmar contraseña" class="form-control col-8" id="confirma_contraseña" name="confirma_contraseña">
                 <div class="error-message" id="confirma_contraseña-error"></div>
-            </form>
+           
         </div>
         <div class="row" id="section_encargado">
             <div class="col-12">
@@ -72,10 +73,11 @@
                 </div>
                 <!-- QUITAR HREF -->
                 <div class="row justify-content-center"> <!-- Añadido para centrar el botón -->
-                <a href="{{route('lista_emociones')}}"><button type="button" class="form-control" id="btn_next" name="button" required>Siguiente</button></a>
+                <a href=""><button type="button" class="form-control" id="btn_next" name="button" required>Siguiente</button></a> <!-- boton submit y no meter hipervinculo -->
                 </div>
             </div>
         </div>
+        </form>
     </div>
 </div>
 </body>
