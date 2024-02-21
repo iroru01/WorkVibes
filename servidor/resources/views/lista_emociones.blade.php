@@ -35,7 +35,7 @@
 <body>
 <br>
 <div class="container-fluid">
-    <H4 class="ml-5">LISTA DE EMOCIONES</H4>
+    <img src="imgs/lista_emociones_img.png" class="img_lista_emociones" alt="img_lista_emociones">
     <strong><p class="ml-5">**COLOCAR QUE NO EXISTEN EMOCIONES REGISTRADAS**</p></strong>
     <br>
     <div class="row ml-5">
