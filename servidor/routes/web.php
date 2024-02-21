@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DepartamentoController;
+use App\Http\Controllers\EventoController;
+use App\Http\Controllers\UsuarioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,15 +20,17 @@ use App\Http\Controllers\LoginController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
 //VISTAS 
 Route::view("index","index");
 Route::get('/login', 'LoginController@index')->name('login');
 Route::get('/registro', 'RegistrarController@index')->name('register');
-Route::get('/lista_emociones', 'LoginController@index')->name('show');
+//Route::get('/lista_emociones', 'LoginController@index')->name('show');
 
 //Route::resource('emocionesBueno',emocionesBueno::class); //creo que esta ruta está mal
 
-
+Route::post('/registrar', [UsuarioController::class, 'register'])->name('guardar_usuario');
 
 
 /***AUTENTIFICACION*****/ 

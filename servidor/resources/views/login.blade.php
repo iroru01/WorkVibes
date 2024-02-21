@@ -35,7 +35,7 @@
                     <input type="password" placeholder="Contraseña" class="form-control col-12 col-md-8"  id="contraseña" name="contraseña" required>
                     <span class="error-msg" id="contraseña-error"></span>
                 </div>
-                <a href="{{ route('lista_emociones') }}"><button type="button" class="form-control col-12 col-md-8"  id="btn_entrar" name="button">Iniciar Sesión</button></a>
+                <a href=""><button type="button" class="form-control col-12 col-md-8"  id="btn_entrar" name="button">Iniciar Sesión</button></a>
                 <a href="{{ route('registro') }}"><button type="button" class="form-control col-12 col-md-8"  id="btn_entrar" name="button" required>Registrate</button></a>
             </form>
             <!-- JAVASCRIPT BTN INCIAR SESION-->
